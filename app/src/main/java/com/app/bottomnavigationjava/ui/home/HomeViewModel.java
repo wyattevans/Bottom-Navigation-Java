@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
+    private final String simpleTAG = HomeViewModel.class.getSimpleName();
 
     private MutableLiveData<String> mText;
 
