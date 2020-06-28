@@ -13,8 +13,10 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.app.bottomnavigationjava.R;
+import com.app.bottomnavigationjava.ui.home.HomeViewModel;
 
 public class DashboardFragment extends Fragment {
+    private final String simpleTAG = DashboardFragment.class.getSimpleName();
 
     private DashboardViewModel dashboardViewModel;
 
