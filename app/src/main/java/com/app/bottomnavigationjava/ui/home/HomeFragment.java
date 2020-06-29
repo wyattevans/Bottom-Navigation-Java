@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.app.bottomnavigationjava.R;
 
 public class HomeFragment extends Fragment {
+    private final String simpleTAG = HomeFragment.class.getSimpleName();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
