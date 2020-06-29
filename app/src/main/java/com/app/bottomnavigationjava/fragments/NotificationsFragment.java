@@ -16,6 +16,7 @@ import com.app.bottomnavigationjava.R;
 import com.app.bottomnavigationjava.vm.NotificationsViewModel;
 
 public class NotificationsFragment extends Fragment {
+    private final String simpleTAG = HomeFragment.class.getSimpleName();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
