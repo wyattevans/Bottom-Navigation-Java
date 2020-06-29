@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class DashboardViewModel extends ViewModel {
+    private final String simpleTAG = DashboardViewModel.class.getSimpleName();
 
     private MutableLiveData<String> mText;
 
