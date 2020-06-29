@@ -1,4 +1,4 @@
-package com.app.bottomnavigationjava.ui.home;
+package com.app.bottomnavigationjava.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,16 +13,16 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.app.bottomnavigationjava.R;
+import com.app.bottomnavigationjava.vm.NotificationsViewModel;
 
-public class HomeFragment extends Fragment {
-    private final String simpleTAG = HomeFragment.class.getSimpleName();
+public class NotificationsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        NotificationsViewModel notificationsViewModel = ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        final TextView textView = root.findViewById(R.id.text_notifications);
+        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

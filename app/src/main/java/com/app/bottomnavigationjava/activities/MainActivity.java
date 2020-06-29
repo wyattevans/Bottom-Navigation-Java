@@ -1,8 +1,8 @@
-package com.app.bottomnavigationjava;
+package com.app.bottomnavigationjava.activities;
 
 import android.os.Bundle;
 
-import com.app.bottomnavigationjava.ui.home.HomeViewModel;
+import com.app.bottomnavigationjava.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;

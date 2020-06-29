@@ -1,4 +1,4 @@
-package com.app.bottomnavigationjava.ui.dashboard;
+package com.app.bottomnavigationjava.vm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -14,7 +14,7 @@ public class DashboardViewModel extends ViewModel {
         mText.setValue("This is dashboard fragment");
     }
 
-    LiveData<String> getText() {
+    public LiveData<String> getText() {
         return mText;
     }
 }

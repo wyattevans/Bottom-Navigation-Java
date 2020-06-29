@@ -1,4 +1,4 @@
-package com.app.bottomnavigationjava.ui.home;
+package com.app.bottomnavigationjava.vm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -14,7 +14,7 @@ public class HomeViewModel extends ViewModel {
         mText.setValue("This is home fragment");
     }
 
-    LiveData<String> getText() {
+    public LiveData<String> getText() {
         return mText;
     }
 }

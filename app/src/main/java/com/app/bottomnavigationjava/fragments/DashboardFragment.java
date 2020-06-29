@@ -1,4 +1,4 @@
-package com.app.bottomnavigationjava.ui.dashboard;
+package com.app.bottomnavigationjava.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.app.bottomnavigationjava.R;
-import com.app.bottomnavigationjava.ui.home.HomeViewModel;
+import com.app.bottomnavigationjava.vm.DashboardViewModel;
 
 public class DashboardFragment extends Fragment {
     private final String simpleTAG = DashboardFragment.class.getSimpleName();

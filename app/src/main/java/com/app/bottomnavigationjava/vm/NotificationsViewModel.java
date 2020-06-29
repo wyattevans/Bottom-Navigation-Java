@@ -1,4 +1,4 @@
-package com.app.bottomnavigationjava.ui.notifications;
+package com.app.bottomnavigationjava.vm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -13,7 +13,7 @@ public class NotificationsViewModel extends ViewModel {
         mText.setValue("This is notifications fragment");
     }
 
-    LiveData<String> getText() {
+    public LiveData<String> getText() {
         return mText;
     }
 }
