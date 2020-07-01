@@ -1,6 +1,7 @@
 package com.app.bottomnavigationjava.activities;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.app.bottomnavigationjava.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
+        Log.d(simpleTAG, "onCreate method hit.");
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
