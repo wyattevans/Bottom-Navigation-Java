@@ -16,7 +16,6 @@ import com.app.bottomnavigationjava.R;
 import com.app.bottomnavigationjava.vm.HomeViewModel;
 
 public class HomeFragment extends Fragment {
-    private final String simpleTAG = HomeFragment.class.getSimpleName();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

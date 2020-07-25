@@ -17,14 +17,12 @@ import com.app.bottomnavigationjava.R;
 import com.app.bottomnavigationjava.vm.DashboardViewModel;
 
 public class DashboardFragment extends Fragment {
-    private final String simpleTAG = DashboardFragment.class.getSimpleName();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DashboardViewModel dashboardViewModel = ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
-        Log.d(simpleTAG, "onCreateView method hit.");
 
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

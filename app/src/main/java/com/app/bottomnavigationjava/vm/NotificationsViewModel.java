@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class NotificationsViewModel extends ViewModel {
-    private final String simpleTAG = NotificationsViewModel.class.getSimpleName();
 
     private MutableLiveData<String> mText;
 
